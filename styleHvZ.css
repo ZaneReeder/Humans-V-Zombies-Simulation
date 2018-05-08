@@ -1,0 +1,291 @@
+html,body {
+    font-family: Arial, sans-serif;
+    margin: 0 0 0 0;
+    color: whitesmoke;
+    background-color: #222222;
+    font-family: Wilhelm, Arial, sans-serif;
+    letter-spacing: 3px;
+}
+
+/***TITLE***/
+
+#title-container {
+    text-align: left;
+    margin-bottom: 40px;
+    margin-top: 5px;
+}
+
+h1 {
+    display: inline-block;
+    font-size: 75px;
+    color: #818F9A;
+    border-bottom: solid 5px #818F9A;
+    width: 100%;
+    padding-left: 10px;
+}
+
+h1 span#human {
+    color: #9E1616;
+}
+
+h1 span#zombie {
+    color: #1B9E00;
+}
+
+h2 {
+    font-size: 52px;
+    border-bottom: solid 3px;
+}
+
+h2#human-title {
+    border-color: #9E1616;
+}
+
+h2#zombie-title {
+    border-color: #1B9E00;
+}
+
+h2#map-title {
+    border-color: #596E7E;
+}
+
+
+/***Simulation Display***/
+#sim .container {
+    width: 100%;
+}
+
+canvas {
+    display: block;
+    border: solid 4px #2C2C2C;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#sim-container {
+    margin-bottom: 40px;
+}
+
+section {
+    padding: 25px;
+}
+
+
+/***Forms***/
+#human-form {
+    color: #9E1616;
+}
+
+#human-form input {
+    border-color: #9E1616;
+    color: #9E1616;
+}
+
+#zombie-form {
+    color: #1B9E00;
+}
+
+#zombie-form input {
+    border-color: #1B9E00;
+    color: #1B9E00;
+}
+
+#map-form {
+    color: #596E7E;
+}
+
+#map-form input {
+    border-color: #596E7E;
+    color: #596E7E; 
+}
+
+#map-form div.boundary-choice {
+    display: inline-block;
+}
+
+#map-form div.boundary-choice.hide-me {
+    display: none;
+}
+
+label {
+    display: block;
+    font-size: 30px;
+    margin: 15px 0 0 0;
+}
+
+input {
+    position: relative;
+    border: none;
+    border-bottom: solid 3px;
+    display: inline-block;
+    width: 70px;
+    height: 40px;
+    margin-right: 5px;
+    margin-bottom: 0px;
+    background: #212121;
+    padding: 5px;
+    font-size: 26px;
+}
+
+input:hover {
+    background: rgba(108, 126, 139, 0.1);
+}
+
+input[type=checkbox] {
+    position: relative;
+    top: 4px;
+    margin: 0 5px 0 0;
+    height: 20px;
+    width: 20px;
+}
+
+select {
+    display: inline-block;
+    width: 300px;
+    height: 30px;
+    margin-bottom: 15px;
+}
+
+form span {
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+sm,
+form p {
+    font-family: Wilhelm, Arial, sans-serif;
+    font-weight: 100;
+    font-size: 12px;
+    color: #818F9A;
+}
+
+form span#perc {
+    font-size: 30px;
+    position: relative;
+    top: 3px;
+    line-height: 0px;
+}
+
+
+/***Buttons***/
+#button-container {
+    margin-bottom: 30px;
+}
+
+#run-container {
+    text-align: right;
+    padding-right: 0;
+}
+
+button.btn.btn-default {
+    margin-top: 20px;
+    letter-spacing: 2px;
+    border-radius: 0;
+    border: solid 3px #818F9A;
+    background-color: rgba(108, 126, 139, 0.75);
+    font-size: 20px;
+}
+
+button.btn.btn-default:hover {
+    background-color: rgba(108, 126, 139, 1);
+}
+
+button#sim-btn {
+    position: relative;
+    display: block;
+    letter-spacing: 2px;
+    float:right;
+}
+
+#stop-container {
+    padding-left: 0;
+}
+
+#stop-container sm { 
+    color: whitesmoke;
+}
+button#stop-btn {
+    display: block;
+}
+
+
+/***Stats***/
+.stat {
+    margin: 0 0 20px 0;
+}
+
+.stat-title {
+    margin-bottom: 5px;
+    font-size: 26px;
+}
+
+#game-timer-stat {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#game-timer-title.stat-title {
+    font-size: 36px;
+}
+
+.stat-num {
+    font-size: 20px;
+}
+
+#game-timer-time.stat-num {
+    font-size: 28px;
+}
+
+#combat-log {
+    width: 500px;
+}
+
+#combat-log textarea { 
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px;
+    text-align: left;
+    background: #818F9A;
+    border: solid 2px #596E7E;
+}
+
+/***ProgressBar***/
+.progress {
+    background: #1B9E00;
+    width: 100%;
+    height: 25px;
+    border: solid 3px #596E7E;
+    border-radius: 0px;
+}
+
+.progress-bar {
+    position: relative;
+    box-sizing: border-box;
+    display: inline;
+    background: white;
+    margin: 0;
+    padding: 0;
+}
+
+.progress .progress-bar.human {
+    background: #9E1616;
+}
+
+.progress .progress-bar.zombie {
+    background: #1B9E00;
+}
+
+/***ReadMe***/
+
+#read-me {
+    color: whitesmoke;
+}
+
+#read-me p {
+    font-family: 'Do Hyeon', sans-serif;
+    font-size: 16px;
+}
+
+#read-me h4 {
+    color: #818F9A;
+}
