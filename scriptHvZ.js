@@ -443,7 +443,7 @@ var simulationController = (function() {
     
     
     var checkGameOver = function(obj) {
-        if ((obj.humans.length === 0) || obj.gameTimer >= 300.0000) { obj.gameOver = true; }
+        if (obj.humans.length === 0) { obj.gameOver = true; }
     };
     
     
